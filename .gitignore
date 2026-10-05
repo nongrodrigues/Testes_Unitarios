@@ -1,0 +1,25 @@
+cat > .gitignore << 'EOF'
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ambiente virtual
+.venv/
+venv/
+env/
+
+# Coverage
+.coverage
+.coverage.*
+htmlcov/
+.pytest_cache/
+
+# IDE
+.vscode/
+.idea/
+.cursorrules
+
+# uv
+# (uv.lock geralmente DEVE ser versionado, então não ignore)
+EOF
