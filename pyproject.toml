@@ -1,0 +1,26 @@
+[project]
+name = "testes-unitarios"
+version = "0.1.0"
+description = "Classificação de idade para Neon Genesis Evangelion - QTS"
+requires-python = ">=3.12"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-cov>=5.0.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-v --strict-markers"
+markers = [
+    "unit: testes unitários",
+]
+
+[tool.coverage.run]
+branch = true
+source = ["app", "src/testes_unitarios"]
+
+[tool.coverage.report]
+show_missing = true

@@ -1,0 +1,6 @@
+- Linguagem: Python 3.12+ com Type Hints.
+- Padrão: PEP 8 + programação defensiva.
+- Testes: pytest no padrão AAA.
+- Técnicas: EP, BVA, Error Guessing.
+- Cobertura: 100% branch via pytest-cov.
+- Tema: classificação 16+ para Neon Genesis Evangelion.
